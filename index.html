@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Simple Form</title>
+<style>
+    h2 {text-align: center;}
+  </style>
+</head>
+
+<body>
+  <h2>
+     <span style="border: 1px solid black;">
+        Fill This Form
+     </span>
+  </h2>
+
+  <form method="*">
+    <fieldset>
+      <label for="fname">First Name:</label>
+    <input required type="text" id ="fname" value="Gray">
+      <br><br>
+      <label for="lname">Last Name:</label>
+    <input required type="text" id ="lname" value="Code">
+      <br><br>
+      <label for="pnum">Phone Number:</label>
+    <input required type="text" id ="pnum" alt="empty">
+      <br><br>
+      <label for="email">Email Address:</label>
+      <input required pattern='^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$' required type="text" id="Email">
+      <br><br>
+      <label for="password">Password:</label>
+    <input required type="password" id ="password">
+    <br><br>
+      <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">Male
+    <input type="radio" id="famele" name="gender" value="Female">Female
+    <br><br>
+      
+    <input type="submit" id="submit" onclick="alert ('Succesfully Submitted')">
+</fieldset>
+  </form>
+</body>
+
+</html>
